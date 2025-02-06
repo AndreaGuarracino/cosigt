@@ -123,7 +123,7 @@ def main():
 	metrics.add_argument('--pggb_threads', help='#threads - pggb [24]',type=int, default=24)
 	metrics.add_argument('--pggb_time', help='max time (minutes) - pggb [35]',type=int, default=35)
 	metrics.add_argument('--pggb_memory', help='max memory (mb) - pggb [30000]',type=int, default=30000)
-	metrics.add_argument('--pggb_params', help='additional parameters for pggb [-c 2]',type=str, default='-c 2')
+	metrics.add_argument('--pggb_params', help='additional parameters for pggb [-c 2 -k 0 -X]',type=str, default='-c 2 -k 0 -X')
 	metrics.add_argument('--pggb_tmpdir', help='temporary directory - pggb [working directory]',type=str, default=os.getcwd())
 	#wfmash
 	metrics.add_argument('--wfmash_threads', help='#threads - wfmash [24]',type=int, default=24)
